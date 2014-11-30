@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.2/window.xsd"
+        caption="msg://editCaption"
+        class="com.company.mobile.gui.empty.EmptyEdit"
+        datasource="emptyDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.company.mobile.gui.empty">
+    <dsContext>
+        <datasource id="emptyDs"
+                    class="com.company.mobile.entity.Empty"
+                    view="_local"/>
+    </dsContext>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="emptyDs">
+            <column width="250px">
+                <field id="name"/>
+                <field id="attrDate"/>
+                <field id="attrInt"/>
+                <field id="attrBoolean"/>
+                <field id="attrDouble"/>
+            </column>
+        </fieldGroup>
+        <iframe id="windowActions"
+                screen="editWindowActions"/>
+    </layout>
+</window>

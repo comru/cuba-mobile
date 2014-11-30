@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/5.2/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.mobile.gui.empty.EmptyBrowse"
+        focusComponent="emptyTable"
+        lookupComponent="emptyTable"
+        messagesPack="com.company.mobile.gui.empty">
+    <dsContext>
+        <collectionDatasource id="emptyDs"
+                              class="com.company.mobile.entity.Empty"
+                              view="_local">
+            <query>
+                <![CDATA[select e from mobile$Empty e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <layout expand="emptyTable"
+            spacing="true">
+        <filter id="filter"
+                datasource="emptyDs">
+            <properties include=".*"/>
+        </filter>
+        <table id="emptyTable"
+               width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="name"/>
+                <column id="attrDate"/>
+                <column id="attrInt"/>
+                <column id="attrBoolean"/>
+                <column id="attrDouble"/>
+            </columns>
+            <rows datasource="emptyDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="emptyTable.create"/>
+                <button id="editBtn"
+                        action="emptyTable.edit"/>
+                <button id="removeBtn"
+                        action="emptyTable.remove"/>
+            </buttonsPanel>
+        </table>
+    </layout>
+</window>

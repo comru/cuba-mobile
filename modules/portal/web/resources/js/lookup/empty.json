@@ -1,0 +1,31 @@
+{
+  "id" : "empty-table",
+  "dataMode" : "columntoggle",
+  "class" : "ui-responsive table-stroke",
+  "query" : "select c from mobile$Empty c",
+  "entity" : "mobile$Empty",
+  "view" : "_local",
+  "columns" : [
+    {
+      "id" : "name",
+      "caption" : "Name",
+      "dataPriority" : "persist"
+    },{
+      "id" : "attrDate",
+      "caption" : "Attr Date",
+      "dataPriority" : "1"
+    },{
+      "id" : "attrInt",
+      "caption" : "Attr Int",
+      "dataPriority" : "2"
+    },{
+      "id" : "attrBoolean",
+      "caption" : "Attr Bool",
+      "dataPriority" : "3"
+    },{
+      "id" : "attrDouble",
+      "caption" : "Attr Double",
+      "dataPriority" : "4"
+    }
+  ]
+}
