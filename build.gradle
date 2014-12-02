@@ -9,10 +9,10 @@ allprojects {
 }
 
 buildscript {
-    ext.cubaVersion = '5.2.2'
+    ext.cubaVersion = '5.3.0'
     repositories {
         maven {
-            url 'https://repo.cuba-platform.com/content/groups/work'
+            url 'http://repository.haulmont.com:8587/nexus/content/groups/work'
             credentials {
                 username(rootProject.hasProperty('repoUser') ? rootProject['repoUser'] : 'cuba')
                 password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : 'cuba123')

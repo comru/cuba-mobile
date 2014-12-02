@@ -21,6 +21,7 @@
         <div data-role="content" >  
             <ul data-role="listview" data-inset="true">
                 <li><a href="#lookupReflow" class="c-listview" data-lookup="/resources/js/lookup/empty.json">Empty</a></li>
+                <li><a href="#lookupReflow" class="c-listview" data-lookup="/resources/js/lookup/employee.json">Employee</a></li>
                 <li><a href="#custom" class="custom">Custom</a></li>
                 <li><a href="#style">Stylee</a></li>
                 <li><a href="#about">About</a></li>

@@ -57,8 +57,10 @@ function getSession() {
 function find (e, q, view, first, max) {
 	var s = getSession();
 	var queryResult = null;
+	var url = urlBase + "api/" + "query.json?e=" + e + "&q=" + q + "&s=" + s + "&view=" + view + "&first=" + first + "&max=" + max;
+	console.log(url);
 	$.ajax({
-		url : urlBase + "api/" + "query.json?e=" + e + "&q=" + q + "&s=" + s + "&view=" + view + "&first=" + first + "&max=" + max,
+		url : url,
 		dataType : "json",
 		async : false,
 		success : function (result) {

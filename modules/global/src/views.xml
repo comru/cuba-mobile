@@ -1,3 +1,17 @@
-<views xmlns="http://schemas.haulmont.com/cuba/5.2/view.xsd">
-
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<views xmlns="http://schemas.haulmont.com/cuba/5.3/view.xsd">
+    <view class="com.company.mobile.entity.Employee"
+          name="employee-view">
+        <property name="name"/>
+        <property name="address"
+                  view="_local"/>
+    </view>
+    <view class="com.company.mobile.entity.Employee"
+          name="employee_address">
+        <property name="name"/>
+        <property name="address">
+            <property name="city"/>
+            <property name="country"/>
+        </property>
+    </view>
 </views>

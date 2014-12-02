@@ -4,5 +4,7 @@
     <persistence-unit name="mobile"
                       transaction-type="RESOURCE_LOCAL">
         <class>com.company.mobile.entity.Empty</class>
+        <class>com.company.mobile.entity.Employee</class>
+        <class>com.company.mobile.entity.Address</class>
     </persistence-unit>
 </persistence>
